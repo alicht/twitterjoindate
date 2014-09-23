@@ -1,0 +1,13 @@
+<h1>Welcome</h1>
+
+<div >
+  <%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:name, "Search for a Twitter user: @",) %>
+  <%= text_field_tag(:name, nil, ) %>
+  <%= submit_tag("Search") %>
+  <% end %>      
+</div>
+
+
+
+
