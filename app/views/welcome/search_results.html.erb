@@ -1,1 +1,17 @@
-test
+<div >
+  <%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:name, "Search for another Twitter user: @",) %>
+  <%= text_field_tag(:name, nil, ) %>
+  <%= submit_tag("Search") %>
+  <% end %>      
+</div>
+
+<br>
+<br>
+
+<%= "#{@full_name}" %>  joined Twitter on <%= @created_at.strftime("%A %B %d, %Y") %>
+<br>
+<br>
+User id is : <%= "#{@user_id}" %>
+
+
