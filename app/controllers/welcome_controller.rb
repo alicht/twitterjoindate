@@ -14,10 +14,12 @@ class WelcomeController < ApplicationController
     @name = params[:name]
     @full_name = twitter_client.user_search(@name).first.name
     created_at = twitter_client.user_search(@name).first.created_at
-    @created_at = created_at
-    # Time.strftime(%A %B %d, %Y)
-    
+    @created_at = created_at    
     @user_id = twitter_client.user_search(@name).first.id
+  end
+
+  def error
+
   end
 
 end
