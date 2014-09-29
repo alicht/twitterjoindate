@@ -1,1 +1,9 @@
-Error! Destroy the Humanoid! 
+<div >
+  <%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:name, "Search for another Twitter user: @",) %>
+  <%= text_field_tag(:name, nil, ) %>
+  <%= submit_tag("Search") %>
+  <% end %>      
+</div>
+
+That user doesn't exist! Please search for another Twitter user!

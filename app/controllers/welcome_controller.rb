@@ -11,11 +11,20 @@ class WelcomeController < ApplicationController
       config.access_token        = ENV['twitter_access_token']
       config.access_token_secret = ENV['twitter_access_token_secret']
     end
+    
     @name = params[:name]
-    @full_name = twitter_client.user_search(@name).first.name
-    created_at = twitter_client.user_search(@name).first.created_at
-    @created_at = created_at    
-    @user_id = twitter_client.user_search(@name).first.id
+    user = twitter_client.user_search(@name).first
+    if user
+     @full_name = user.name
+     @created_at = user.created_at    
+     @user_id = user.id
+    else
+      render "welcome/error"
+    end
+    # @full_name = twitter_client.user_search(@name).first.name
+    # created_at = twitter_client.user_search(@name).first.created_at
+    # @created_at = created_at    
+    # @user_id = twitter_client.user_search(@name).first.id
   end
 
   def error
