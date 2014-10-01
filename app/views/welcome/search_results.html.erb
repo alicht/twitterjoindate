@@ -12,6 +12,9 @@
 <%= link_to @name, "https://twitter.com/#{@name}",target: "blank" %>  joined Twitter on <%= @created_at.strftime("%A %B %d, %Y") %>
 <br>
 <br>
-User id: <%= "#{@user_id}" %>
+User id: <%= number_with_delimiter(@user_id, :delimiter => ',') %>
+<br>
+<br>
+Find <%= @name %>'s <%= link_to "first tweet", "https://discover.twitter.com/first-tweet##{@name}",target: "blank" %>!
 
 

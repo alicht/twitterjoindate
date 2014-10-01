@@ -20,4 +20,7 @@ gem 'spring',        group: :development
 gem 'twitter'
 gem 'pry'
 gem 'figaro'
+gem "twitter-bootstrap-rails"
+gem "less-rails"
+gem "therubyracer"
 
