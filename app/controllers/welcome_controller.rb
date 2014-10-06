@@ -24,18 +24,14 @@ class WelcomeController < ApplicationController
      @created_at = user.created_at    
      @user_id = user.id
     else
-      
+
     end
-    # @full_name = twitter_client.user_search(@name).first.name
-    # created_at = twitter_client.user_search(@name).first.created_at
-    # @created_at = created_at    
-    # @user_id = twitter_client.user_search(@name).first.id
+
+     # render template: "https://discover.twitter.com/first-tweet##{@name}" 
+
   end
 
-   # def user_search(query, options = {})
-   #   perform_with_objects(:get, '/1.1/users/search.json', options.merge(:q => query), Twitter::User)
-
-   # end
+  
 
   def error
 

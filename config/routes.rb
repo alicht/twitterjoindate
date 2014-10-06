@@ -6,5 +6,4 @@ Rails.application.routes.draw do
   root 'welcome#search'
   get '/search', to: 'welcome#search_results'
 
-
 end
