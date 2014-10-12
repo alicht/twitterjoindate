@@ -16,9 +16,7 @@ User id: <%= number_with_delimiter(@user_id, :delimiter => ',') %>
 <br>
 <br>
 
-<%= @first_tweet %>
-
-Find <%= @name %>'s first tweet<iframe src="https://discover.twitter.com/first-tweet#<%=@name%>">,target: "blank" %></iframe>!
+Find <%= @name %>'s <%= link_to "first tweet", "https://discover.twitter.com/first-tweet##{@name}",target: "blank" %>!
 
 
 <!-- Find <%= @name %>'s <%= link_to "first tweet", "https://discover.twitter.com/first-tweet##{@name}",target: "blank" %>!
