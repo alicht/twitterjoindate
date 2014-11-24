@@ -27,7 +27,12 @@ class WelcomeController < ApplicationController
 
     end
 
-     # render template: "https://discover.twitter.com/first-tweet##{@name}" 
+    # http://api.nytimes.com/svc/search/v2/articlesearch.json[q=""&begin_date=20141123&end_date=20141123]&api-key=5dc6806f7b4ce918bdc37bc975fb783a:10:69926712
+    # play with the api
+    # @created_at #strftime needs a specific 
+
+
+    # http://api.nytimes.com/svc/search/v2/articlesearch.json?fq=romney&facet_field=day_of_week&begin_date=20120101&end_date=20120101&api-key5dc6806f7b4ce918bdc37bc975fb783a:10:69926712
 
   end
 

@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.3'
 # ruby '2.0.0'
 
 
@@ -28,3 +28,5 @@ gem "twitter-bootstrap-rails"
 gem "less-rails"
 gem "therubyracer"
 gem 'faraday'
+# gem 'nytimes-articles'
+gem 'httparty'
