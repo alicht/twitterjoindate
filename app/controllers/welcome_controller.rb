@@ -23,13 +23,12 @@ class WelcomeController < ApplicationController
      @full_name = user.name
      @created_at = user.created_at    
      @user_id = user.id
-    else
+     response = HTTParty.get("http://api.nytimes.com/svc/search/v2/articlesearch.json?q=new+york+times&sort=oldest&q=&begin_date=#{@created_at}&end_date=#{@created_at}&api-key=5dc6806f7b4ce918bdc37bc975fb783a:10:69926712")
+     @nytimes_headlines = response["docs"][0]["headline"]
+
 
     end
 
-    # http://api.nytimes.com/svc/search/v2/articlesearch.json[q=""&begin_date=20141123&end_date=20141123]&api-key=5dc6806f7b4ce918bdc37bc975fb783a:10:69926712
-    # play with the api
-    # @created_at #strftime needs a specific 
 
 
     # http://api.nytimes.com/svc/search/v2/articlesearch.json?fq=romney&facet_field=day_of_week&begin_date=20120101&end_date=20120101&api-key5dc6806f7b4ce918bdc37bc975fb783a:10:69926712

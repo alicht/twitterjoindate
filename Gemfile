@@ -30,3 +30,4 @@ gem "therubyracer"
 gem 'faraday'
 # gem 'nytimes-articles'
 gem 'httparty'
+
