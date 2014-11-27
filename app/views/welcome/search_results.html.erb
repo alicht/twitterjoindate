@@ -17,8 +17,11 @@ User id: <%= number_with_delimiter(@user_id, :delimiter => ',') %>
 <br>
 
 Find <%= @name %>'s <%= link_to "first tweet", "https://discover.twitter.com/first-tweet##{@name}",target: "blank" %>!
-
-<%= @response %>
+<br>
+<%- @nytimes_headlines.each do |headline_hash| %>
+	<%= link_to headline_hash[:headline], headline_hash[:url], target: "blank" %>
+	<br>
+<% end %>
 
 
 <!-- Find <%= @name %>'s <%= link_to "first tweet", "https://discover.twitter.com/first-tweet##{@name}",target: "blank" %>!

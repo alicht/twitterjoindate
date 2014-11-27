@@ -1,0 +1,20 @@
+app -> controllers
+mode
+
+
+JsonParser
+
+
+json = JsonParser.new(response)
+
+json.getObject
+
+
+
+class JsonParser
+  def initialize(json)
+  end
+  
+  def getObject
+  end
+end
