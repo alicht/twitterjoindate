@@ -1,0 +1,239 @@
+/*.box {
+  background-color: #fff;
+  text-align: left;
+}*/
+
+/*----------------WELCOME PAGE -------------------*/
+.custom-label{
+  background-color: #35bdf6;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  text-shadow: none !important;
+  text-transform: uppercase;
+  box-shadow: none;
+  display: inline-block;
+  letter-spacing: 1px;
+  padding: 10px 16px;
+  margin-bottom: 0px;
+}
+
+.home-arrow-down .custom-search{
+  margin-bottom: 4px;
+  padding-left: 5px;
+
+}
+
+/*----------------SEARCH PAGE -------------------*/
+
+.search-results{
+  background-position: center 0%;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-image: asset-url("flock.jpg", image);
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+/*.search-results{
+  margin: 0 auto;
+  background-image: image-url("flock.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+/*  height: 100%*/
+
+.list-members-results{
+  background-position: center 0%;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-image: asset-url("flock.jpg", image);
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+/*.list-members-results{
+  margin: 0 auto;
+  background-image: image-url("flock.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  height: 100%;
+}*/
+
+/*----------------FORMAT RESULTS-------------------*/
+.format-results {
+  margin: auto;
+  width: 45%;
+  background-color: #ffffff;
+  padding: 25px;
+
+}
+.format-results h4 {
+  text-align: center;
+
+}
+.format-results blockquote {
+  padding: 1px 10px;
+  margin: 0 5px 10px;
+}
+/*----------------DOORMAT RESULTS-------------------*/
+.doormat-results {
+  margin: left;
+  width: 25%;
+  background-color: #ffffff;
+  padding: 25px;
+
+}
+.doormat-results h4 {
+  text-align: center;
+
+}
+
+
+.list-members, .search-twitter-and-name-of-list, .users-to-add {
+  background-color: #ffffff;
+  padding: 25px;
+}
+
+/*----------------SEARCH-CONTENT-TEXT-CENTER-------------------*/
+.search-content-text-center{
+
+  position: relative;
+  vertical-align: middle;
+  z-index: 3;
+  margin-center: 0 auto;
+  padding: 20px 0;
+
+}
+.search-content-text-center input {
+  margin-bottom: 3px;
+}
+.alpha{
+  background-color: rgba(44,62,80,0.4);
+}
+
+
+.search-form-div {
+  padding: 20px 0 0 20px; 
+  margin-bottom: 4px;
+}
+.search-form-div input {
+  margin-bottom: 3px;
+}
+
+.search-form-div label {
+
+}
+
+/*--------*/
+
+div.thank-you{
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.thank-you textarea {
+  height: 70px;
+}
+.centered{
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.entire-page float {
+  float: left;
+}
+
+/*--------*/
+
+.no-list {
+  /*background-image: url(/assets/Bouncer-with-headset.jpg);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;*/
+  max-width: 1082px;
+}
+.no-list h1 {
+  font-size: 58px;
+}
+.no-list input {
+  margin-bottom: 3px;
+}
+
+.thank-you {
+  margin-top: 100px !important;
+  background-color: rgba(255, 255, 255, 0.79);
+}
+
+.notice{
+  font-size: 20px;
+  z-index: 999;
+
+}
+
+.thank-you-results{
+  margin: 0 auto;
+  background-image: image-url("sunset.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.page-not-found{
+  margin: 0 auto;
+  background-image: image-url("seagull.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.alert.alert-info{
+  z-index: 1000;
+  position: relative;
+  margin-bottom: 0 !important;
+
+}
+
+.rate-limit{
+  margin: 0 auto;
+  background-image: image-url("lanes.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+div.rate-limit-results{
+
+}
+
+.thank-you {
+  margin-top: 40px !important;
+}
+
+iframe {
+  width: 500px;
+}
+
+.jumbotron {
+  padding-top: 2px;
+  padding: 10px;
+  }
+
+.apology-message-and-video {
+  width: 900px;
+}
+
+.by-alicht{
+  text-align: center;
+}
