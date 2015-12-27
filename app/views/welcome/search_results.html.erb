@@ -10,17 +10,19 @@
 <br>
 <div class="jumbotron vertical-center">
 <div class="container text-center"> 
-<%= link_to @name, "https://twitter.com/#{@name}",target: "blank" %>  joined Twitter on <%= @created_at.strftime("%A %B %d, %Y") %>
+<h2><%= link_to @name, "https://twitter.com/#{@name}",target: "blank" %>  joined Twitter on <%= @created_at.strftime("%A %B %d, %Y") %></h2>
 <br>
-<br>
-User id: <%= number_with_delimiter(@user_id, :delimiter => ',') %>
-<br>
+<%= image_tag @profile_image %>
+<h3>User id: <%= number_with_delimiter(@user_id, :delimiter => ',') %></h3>
 <br>
 
-Find <%= @name %>'s <%= link_to "first tweet", "https://discover.twitter.com/first-tweet##{@name}",target: "blank" %>!
+This was <%= @name %>'s <%= link_to "first tweet", "https://discover.twitter.com/first-tweet##{@name}",target: "blank" %>!
+<br>
+<br>
+<b>NYTimes headlines on <%= @created_at.strftime("%A %B %d, %Y") %> were:</b>
 <br>
 <%- @nytimes_headlines.each do |headline_hash| %>
-	<%= link_to headline_hash[:headline], headline_hash[:url], target: "blank" %>
+<%= link_to headline_hash[:headline], headline_hash[:url], target: "blank" %>
 	<br>
 <% end %>
 </div>
