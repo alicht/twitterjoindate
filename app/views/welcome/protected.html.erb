@@ -1,0 +1,11 @@
+<div >
+  <%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:name, "Search for another Twitter user: @",) %>
+  <%= text_field_tag(:name, nil, ) %>
+  <%= submit_tag("Search") %>
+  <% end %>      
+</div>
+
+<h1>Sorry! @<%= @name %>'s account is protected. Please search for another Twitter user!</h1>
+
+<%= image_tag "knights.jpg" %>
