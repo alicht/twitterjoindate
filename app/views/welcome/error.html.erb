@@ -1,6 +1,6 @@
-<div >
+<div class = "search-form-div">
   <%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:name, "Search for another Twitter user: @",) %>
+  <%= label_tag(:name, "Search for another Twitter user: @", class: "custom-label") %>
   <%= text_field_tag(:name, nil, ) %>
   <%= submit_tag("Search") %>
   <% end %>      
