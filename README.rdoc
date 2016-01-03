@@ -1,3 +1,0 @@
-== Twitter Join Date
-
-An app that allows you to search for what date a user joined Twitter, and what other notable things happened on that date.  
