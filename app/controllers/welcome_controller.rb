@@ -25,7 +25,8 @@ class WelcomeController < ApplicationController
      @user_id = user.id
      @profile_image =  user.profile_image_uri
      @created = user.created_at.strftime("%Y%m%d")
-     response = HTTParty.get("http://api.nytimes.com/svc/search/v2/articlesearch.json?q=new+york+times&sort=oldest&begin_date=#{@created}&end_date=#{@created}&api-key=5dc6806f7b4ce918bdc37bc975fb783a:10:69926712")
+     response = HTTParty.get("http://api.nytimes.com/svc/search/v2/articlesearch.json?q=new+york+times&sort=oldest&begin_date=#{@created}&end_date=#{@created}&api-key=846d9e3580a44164a9c7d2c4ba8c8994")
+     puts response.inspect
      @nytimes_headlines = response["response"]["docs"].map do |docs_hash|
       {headline:  docs_hash["headline"]["main"], url: docs_hash["web_url"]}
       # docs_hash["headline"]["main"]
